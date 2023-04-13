@@ -2,6 +2,23 @@ h2{ background-color: black;
     color: white}
 
 
-body{ background-color: grey;
+body{ background-color: grey ;}
 
-.solid{border-bottom-style: -o-border-image: color: ;}
+li{background-color: white;
+    color:black; }
+
+
+form{background-color: grey;
+    color: black;}
+
+p{background-color: gray;
+color: black;}
+
+ol{background-color: grey;
+color: black;}
+
+a{background-color: grey;
+color: black;}
+
+img{border: dashed black;}
+ol{border-style: dashed red ;}
