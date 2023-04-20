@@ -273,3 +273,8 @@ footer{
     padding: 0;
     margin: 0;
 }
+
+.footer-final{
+    background-color: black;   
+    padding: 1.8%;
+}
