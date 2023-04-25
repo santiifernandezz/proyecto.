@@ -160,7 +160,7 @@ footer{
 
 .footer {
     background-color:wheat ;
-    padding: 80px 0;
+    padding: 1rem 0;
 }
 
 .footer-row {
@@ -229,13 +229,16 @@ footer{
 
 /*politicas de privacidad*/
 
-.politicas h1 h5 {
+.politicas h1 h2 {
     background-color: black;
     color: wheat;
     margin: auto;
     padding: 0%;
     display: flex;
     box-sizing: border-box;
+}
+.politicas h1{
+    text-align: center;
 }
 
 
@@ -581,7 +584,7 @@ footer{
         text-align: block;
         display: flex;
         flex-wrap: nowrap;
-        padding: 80px 0;
+        padding: 1rem 0;
     }
     .footer-links{
         width: 100%;
