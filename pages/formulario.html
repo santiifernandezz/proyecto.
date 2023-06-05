@@ -1,12 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FrakIND</title>
+    <link rel="stylesheet" href="/css/style2.css">
 </head>
-<body>
+    <body class="color-amarrillo">
+        <!-- Header -->
+        <header class="main-header">
+        <div class="header-wrap">
+                <div class="wrap-logo-header">
+                    <a  class="logo-header">
+                    <span class="color-amarrillo">Tienda</span><span class="color-amarrillo">De</span><span class="color-amarrillo">Ropa</span>
+                    </a>
+                </div>
+            <div class="wrap-nav-header">
+                <nav class="nav-header">
+                    <input type="checkbox" id="check">
+                    <label for="check" class="checkbtn">
+                        <i class="toggle-menu" >
+                            <img width="50" src="./images/descarga.png" alt="/">
+                        </i>
+                    </label>
+                    <ul class="main-menu">
+                        <li class="menu-item"><a href="../index.html">Inicio</a></li>
+                        <li class="menu-item"><a href="../pages/somosnosotros.html">Nosotros</a></li>
+                        <li class="menu-item"><a href="/">Remeras</a></li>
+                        <li class="menu-item"><a href="/">Camperas</a></li>
+                        <li class="menu-item"><a href="/">Pantalones</a></li>
+                        <li class="menu-item"><a href="/">Accesorios</a></li>
+                        <li class="menu-item"><a  id="nav-main-contact" href="./formulario.html">Contactanos</a></li>
+                        <div class="container-user">
+                            <i class="fa-regular fa-user"></i>
+                            <i class="fa-solid fa-basket-shopping"></i>
+                            <div class="container-shopping-card">
+                                <span class="text">Carrito</span>
+                                <span class="number">(0)</span>
+                            </div>
+                        </div>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        </header>
+        <div class="hero"></div>
+        <!-- fin de header -->
+        <article>
+            <h3>FORMULARIO (EN CASO DE QUERER FORMAR PARTE DE NOSOTROS)</h3>
+            <form action="https://formsubmit.co/santythomasfp@gmail.com" method="POST">
+                <fieldset>
+                    <legend>Datos personales</legend>
+                        Nombre:<input type="text" name="nombre" id="nombre"><br>
+                        Apellido:<input type="text" name="apellido" id="apellido"><br>
+                        Telefono:<input type="number" name="telefono" id="telefono"><br>
+                        Mail:<input type="email" name="email" id="email"><br>
+                        Documento: <input type="text" name="documento" id="documento"><br>
+                            <fieldset> Horarios: <div></div>
+                                Mañana<input type="radio" name="horarios" id="horarios">
+                                Tarde <input type="radio" name="horarios" id="horarios">
+                            <br></fieldset>
+                        Sede: <select name="sedes" >
+                            <option value="">selecciona una opcion</option>
+                            <option value="">Palermo</option>
+                            <option value="">Villa Devoto</option>
+                            <option value="">Villa Urquiza</option>
+                            <option value="">Otra</option>
+                            </select><br>
+                            <div>Debo comprometerme a llevar el Curriculum</div>
+                            <input type="checkbox" name="acepta" value="1"><br>
+                </fieldset>
+                            <input type="submit" type="button" onclick="Enviado()" name="Enviar" value="Enviar">
+                            <input type="reset" name="borrar" value="Borrar">
+                            <input type="hidden" name="_next" value="http://127.0.0.1:5500/pages/formulario.html" >
+                            <input type="hidden" name="_captcha" value="false">
+
+            </form>
+        </article>
+    <script src="/scripts/codigo1.js"></script>
+    <script src="https://kit.fontawesome.com/2fe01361b9.js" crossorigin="anonymous"></script>
+    </body>
     
-</body>
+    <footer>
+        <iframe class="footer-iframe" src="footer.html" frameborder="0"></iframe>
+    </footer>
 </html>
