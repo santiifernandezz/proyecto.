@@ -49,19 +49,19 @@
         <!-- fin de header -->
         <article>
             <h3>FORMULARIO (EN CASO DE QUERER FORMAR PARTE DE NOSOTROS)</h3>
-            <form action="https://formsubmit.co/santythomasfp@gmail.com" method="POST">
+            <form action="https://formsubmit.co/santythomasfp@gmail.com" method="POST" name="formulario" onsubmit="return validarfor();">
                 <fieldset>
                     <legend>Datos personales</legend>
-                        Nombre:<input type="text" name="nombre" id="nombre"><br>
-                        Apellido:<input type="text" name="apellido" id="apellido"><br>
-                        Telefono:<input type="number" name="telefono" id="telefono"><br>
-                        Mail:<input type="email" name="email" id="email"><br>
-                        Documento: <input type="text" name="documento" id="documento"><br>
+                        Nombre:<input type="text" name="nombres" id="nombres" required><br>
+                        Apellido:<input type="text" name="apellidos" id="apellidos" required><br>
+                        Telefono:<input type="number" name="telefono" id="telefono" required><br>
+                        Mail:<input type="email" name="email" id="email" required><br>
+                        Documento: <input type="text" name="documento" id="documento" required><br>
                             <fieldset> Horarios: <div></div>
-                                Mañana<input type="radio" name="horarios" id="horarios">
-                                Tarde <input type="radio" name="horarios" id="horarios">
+                                Mañana<input type="radio" name="horarios" id="horarios" required>
+                                Tarde <input type="radio" name="horarios" id="horarios" required>
                             <br></fieldset>
-                        Sede: <select name="sedes" >
+                        Sede: <select name="sedes" required>
                             <option value="">selecciona una opcion</option>
                             <option value="">Palermo</option>
                             <option value="">Villa Devoto</option>
@@ -69,7 +69,7 @@
                             <option value="">Otra</option>
                             </select><br>
                             <div>Debo comprometerme a llevar el Curriculum</div>
-                            <input type="checkbox" name="acepta" value="1"><br>
+                            <input type="checkbox" name="acepta" value="1" required><br>
                 </fieldset>
                             <input type="submit" type="button" onclick="Enviado()" name="Enviar" value="Enviar">
                             <input type="reset" name="borrar" value="Borrar">
